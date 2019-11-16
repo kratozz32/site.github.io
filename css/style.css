@@ -1,0 +1,347 @@
+/*font-face*/
+@font-face {
+  font-family: 'ProximaNova-bold';
+  src: url('../font/ProximaNova-Bold.woff2') format('woff2'), url('../font/ProximaNova-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova-Reg';
+  src: url('../font/ProximaNova-Regular.woff2') format('woff2'), url('../font/ProximaNova-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'ProximaNova-Reg', sans-serif;
+}
+/*colors*/
+/*basic settings*/
+html {
+  font-size: 10px;
+}
+button:hover,
+a:hover,
+input:hover {
+  outline: none;
+}
+/*Основная кнопка*/
+.button {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: #feb403;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.2rem;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #e7a301;
+}
+/*typography*/
+section {
+  padding: 10rem 0;
+}
+/*main*/
+.main {
+  background: #ffffff url(../img/project3.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  padding: 3rem 0 5rem ;
+  /*Подзаголовок*/
+  /*Зеленый ярлык*/
+  /*Подвал заголовка*/
+  /*Главная форма*/
+}
+.main .main-content {
+  /*Главный заголовок*/
+}
+.main .main-content h1 {
+  font-family: 'ProximaNova-bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+  line-height: 1.45;
+  margin-top: 0px;
+}
+.main .subtitle {
+  font-family: 'ProximaNova-Reg', sans-serif;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+.main span {
+  display: inline-block;
+  padding: 3rem 5rem ;
+  background-color: #46b813;
+  font-size: 1.8rem;
+  color: white;
+  text-align: center;
+  /*Цифра 300*/
+}
+.main span strong {
+  font-size: 3rem;
+  font-family: 'ProximaNova-bold', sans-serif;
+}
+.main .main-trigger {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  font-family: 'ProximaNova-bold', sans-serif;
+  display: block;
+  margin-top: 3rem;
+}
+.main .main-form {
+  display: block;
+  background-color: white;
+  padding: 3rem 4rem;
+  text-align: center;
+  /*Заголовок формы*/
+  /*Поля для введения*/
+  /*Подписи к полям*/
+  /*Кнопка отправьте заявку*/
+  /*Подпись под кнопкой*/
+}
+.main .main-form .main-form-header {
+  margin-bottom: 4rem;
+  font-size: 1.8em;
+}
+.main .main-form .main-form-header strong {
+  font-size: 1.9rem;
+}
+.main .main-form .main-form-input {
+  display: block;
+  margin: 2rem 0;
+  width: 100%;
+  border: 1px solid #dddddd;
+  padding: 1.7rem;
+}
+.main .main-form label {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  padding: 0.5rem;
+  background-color: #ffffff;
+  font-size: 1.3rem;
+}
+.main .main-form .main-form-btn {
+  display: block;
+  font-size: 1.3rem;
+  width: 100%;
+}
+.main .main-form small {
+  display: block;
+  margin: 1.5rem 0 ;
+  font-size: 1rem;
+}
+.header {
+  height: 7rem;
+}
+/*Адаптация под телефоны и тд*/
+@media (min-width: 1200px) {
+  .wrap {
+    display: table;
+    width: 100%;
+    height: 7rem;
+  }
+  .wrap .wrap-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+  }
+  .button {
+    padding: 2rem 3rem;
+  }
+  .main-content {
+    margin-top: 10rem;
+  }
+  .phone-block {
+    text-align: right;
+  }
+  .phone-link {
+    display: inline-block;
+    font-family: 'ProximaNova-bold', sans-serif;
+    position: relative;
+    font-size: 19px;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    color: #1a1820;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .wrap {
+    display: table;
+    width: 100%;
+    height: 7rem;
+  }
+  .wrap .wrap-block {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+  }
+  .button {
+    padding: 1.5rem 2rem;
+  }
+  .main-content {
+    margin-top: 10rem;
+  }
+  .phone-block {
+    text-align: right;
+  }
+  .phone-link {
+    display: inline-block;
+    font-family: 'ProximaNova-bold', sans-serif;
+    position: relative;
+    font-size: 19px;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    color: #1a1820;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main {
+    background-position: top right;
+  }
+  .main-content {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  .main-title {
+    padding-bottom: 3rem;
+  }
+  .button {
+    padding: 1.5rem 2rem;
+  }
+  .phone-block {
+    text-align: center;
+  }
+  .phone-link {
+    display: inline-block;
+    font-family: 'ProximaNova-bold', sans-serif;
+    position: relative;
+    font-size: 19px;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    color: #1a1820;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .main {
+    background-position: top left;
+  }
+  .header {
+    text-align: center;
+  }
+  .button {
+    padding: 2rem 3rem;
+  }
+  .main-content {
+    margin-top: 20rem;
+    text-align: center;
+  }
+  .phone-link {
+    display: inline-block;
+    font-family: 'ProximaNova-bold', sans-serif;
+    position: relative;
+    font-size: 19px;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    color: #1a1820;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .main {
+    background-position: top left;
+  }
+  .header {
+    text-align: center;
+  }
+  .button {
+    padding: 2rem 3rem;
+  }
+  .main-content {
+    margin-top: 20rem;
+    text-align: center;
+  }
+  .phone-link {
+    display: inline-block;
+    font-family: 'ProximaNova-bold', sans-serif;
+    position: relative;
+    font-size: 19px;
+    height: 7rem;
+    line-height: 7rem;
+    width: 100%;
+    color: #1a1820;
+  }
+  .wrap-block {
+    text-align: center;
+  }
+}
+/*Блок с преимуществами*/
+.section-header {
+  text-align: center;
+  font-size: 3.6rem;
+  margin: 2rem 0px 13rem ;
+  font-family: 'ProximaNova-bold', sans-serif;
+}
+.features h3 {
+  font-size: 2rem;
+  font-family: 'ProximaNova-bold', sans-serif;
+  margin-bottom: 2rem;
+}
+.features p {
+  font-size: 1.6rem;
+  display: inline-block;
+  width: 85%;
+}
+.features-header {
+  text-align: center;
+  display: inline-block;
+}
+.features-img {
+  height: 6rem;
+  padding: 0.5rem;
+  margin-bottom: 2rem;
+}
+.features-img img {
+  display: block;
+  margin: 0 auto;
+}
+.features .slick-active {
+  outline: none;
+}
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: url(../img/features/left-click.png) center no-repeat;
+  background-size: 70% ;
+}
+.next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: scaleY(-50%);
+          transform: scaleY(-50%);
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: url(../img/features/right-click.png) center no-repeat;
+  background-size: 70% ;
+}
